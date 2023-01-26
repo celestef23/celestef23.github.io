@@ -28,13 +28,14 @@ body {
 }
    
 img {
-    /*float: left;*/
+    /*float: left;
+    en modo celular se achica demasiado*/
     width: 30%;
     margin-bottom: 20px;
 
 }
-.sobremi{
-
+#sobremi{
+    display: none;
     font-size: large;
 
 }
@@ -86,13 +87,14 @@ p {
   
 a{
     font-family: 'Inconsolata', monospace;
-    color: grey;
+    color: lightskyblue;
     
 
 } 
 
+/*no anda*/
 a:hover{
-    color: lightskyblue;
+    color: black;
     font-size: +3px ;
     
 }
@@ -145,7 +147,7 @@ a:hover{
 
 
   #tothetop {
-    display: none; 
+   /* display: none; no anda que aparezca cuando scrolleas*/
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -166,3 +168,5 @@ a:hover{
   }
 
   
+
+
