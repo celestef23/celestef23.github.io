@@ -6,14 +6,7 @@
     font-family: 'Unbounded', cursive;
   }
 
-  
-/* RWD */
-@media (max-width: 600px) {
-    header, .menu, .main, footer, #lista1, #lista2{
-      width: 100%;
-      height: auto;
-    }
-}
+
 
 
 header {
