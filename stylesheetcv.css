@@ -6,11 +6,21 @@
     font-family: 'Unbounded', cursive;
   }
 
+  
+/* RWD */
+@media (max-width: 600px) {
+    header, .menu, .main, footer, #lista1, #lista2{
+      width: 100%;
+      height: auto;
+    }
+}
+
+
 header {
     width: 100%;
     color:black;
     background-color: lightblue;
-    padding: 80px;
+    padding: 30px;
     margin: 10px;
     text-align: center;
     font-size: 15px;
@@ -19,26 +29,55 @@ header {
 
 h1{
     width: 100%;
+    text-align: center;
 }
-
 
 body {
         
         background-color: lightgray;
 }
-   
-img {
-    /*float: left;
-    en modo celular se achica demasiado*/
-    width: 30%;
-    margin-bottom: 20px;
 
-}
-#sobremi{
-    display: none;
-    font-size: large;
+.menu {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    border: 0px solid black;
+    left: 0; 
+    margin-top: 30px; 
+  }
 
+.menu a{
+    color:black;
+    font-family: 'Unbounded', cursive;
+    font-style: normal;
+    text-decoration: none;
 }
+
+.menu ul {
+    list-style-type: none;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }   
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: lightblue;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu li:hover {
+    background-color: lightskyblue;
+  }
+
+  .main {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    border: 0px solid black;
+  }
 
 h2 {
     color:black;
@@ -49,8 +88,6 @@ h2 {
 }
 
 h5  {
-
-    font-style:bold;
     font-size: large;
     font-family: 'Inconsolata', monospace;
 }
@@ -59,125 +96,43 @@ h6 {
     font-style:italic;
     font-size: medium;
     font-family: 'Inconsolata', monospace;
-
 }
 
 p {
     font-family: 'Inconsolata', monospace;
+    font-size: large;
+}
    
+img {
 
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-
+.subtitulo {
+    font-size: small;
+    color: rgb(15, 83, 80);
+    margin-bottom: 30px;
+}
 
 .lista {
     font-family: 'Inconsolata', monospace;
     font-size: large;
-
-
-}
-
-.menu {
-    width: 25%;
     float: left;
-    padding: 15px;
-    border: 0px solid black;
-  }
-
- 
-  
-a{
-    font-family: 'Inconsolata', monospace;
-    color: lightskyblue;
-    
-
-} 
-
-/*no anda*/
-a:hover{
-    color: black;
-    font-size: +3px ;
-    
+    width: 50%;
 }
-
-  .main {
-    width: 75%;
-    float: left;
-    padding: 15px;
-    border: 0px solid black;
-  }
-
-  footer {
-    margin: 10px;
-    padding: 60px;
-    text-align: center;
-    color: white;
-  }
-
-
   
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-    .menu, .main {
-      width: 100%;
-      height: auto;
-    }
-}
-
-
-.menu ul {
-    list-style-type: none;
-    font-style: italic;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  #habint:after {
+    content: "";
+    display: table;
+    clear: both;
   }
-  
-  .menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: lightblue;
-    color: #000000;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  }
-  
-  .menu li:hover {
-    background-color: lightskyblue;
-  }
-
-
-
-  #tothetop {
-   /* display: none; no anda que aparezca cuando scrolleas*/
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 30px;
-    font-family: 'Unbounded', cursive;
-    border: none;
-    outline: none;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  }
-  
-  #tothetop:hover {
-    background-color: lightskyblue;
-  }
-
-  label {
-    padding-right: 10px;
-    font-size: 1rem;
-    color: lightseagreen;
-}
-
 
 .progress {
     height: 15px;
-    width: 20%;
+    width: 50%;
     border: 1px solid lightseagreen;
     border-radius: 5px;
     background-color: #e6f3fa;
@@ -191,4 +146,77 @@ a:hover{
     align-items: center;
     transition: width 0.25s;
     border-radius: 5px;
+}
+
+a{
+    font-family: 'Inconsolata', monospace;
+    color: lightseagreen;
+} 
+
+a:hover{
+    color: black;
+}
+
+i:hover {
+    color: lightseagreen
+}
+
+  footer {
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    padding: 60px;
+    text-align: center;
+    color: white;
+    float: left;
+    font-family: 'Unbounded', cursive;
+  }
+
+  footer:hover {
+    color: black;
+  }
+
+/*botones*/
+
+button {
+    font-size: 15px;  
+    font-family: 'Unbounded', cursive;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#lightdark {
+    float:right;
+   margin:20px;
+    background-color: white;
+    color:black;
+}
+
+  #tothetop {
+    display: none; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  #tothetop:hover, #lightdark:hover {
+    background-color: lightblue;
+  }
+
+
+
+  
+/* RWD */
+@media (max-width: 600px) {
+    header, .menu, .main, footer, #lista1, #lista2{
+      width: 100%;
+      height: auto;
+    }
 }
