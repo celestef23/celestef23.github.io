@@ -203,19 +203,6 @@ button {
   }
 
 
-/* mostrar/ocultar habilidades e intereses*/
-
-.hidden {
-
-    font-style: italic;
-    font-family: 'Inconsolata', monospace;
-    color: rgb(15, 83, 80);
-    font-size: large;
-}
-
-#crehanainfo, #eoainfo {
-    display: none;
-}
 
   
 /* RWD */
